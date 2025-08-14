@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Domains\ProductFeature\Models;
+namespace Products\Models;
 
-use App\Domains\ProductFeaturesTranslation\Models\ProductFeaturesTranslationModel;
+use Products\Models\ProductFeaturesTranslationModel;
 use App\Models\Traits\BaseTranslation;
 use Astrotomic\Translatable\Translatable;
 use Illuminate\Database\Eloquent\Model;
@@ -67,7 +67,7 @@ class ProductFeatureModel extends Model implements Sortable
      */
     public function product()
     {
-        return $this->belongsTo('App\Domains\Product\Models\ProductModel');
+        return $this->belongsTo('Products\Models\ProductModel');
     }
 
     /**
@@ -75,7 +75,7 @@ class ProductFeatureModel extends Model implements Sortable
      */
     public function productFeaturesTranslations()
     {
-        return $this->hasMany('App\Domains\ProductFeaturesTranslation\Models\ProductFeaturesTranslationModel');
+        return $this->hasMany('Products\Models\ProductFeaturesTranslationModel');
     }
 
     /**

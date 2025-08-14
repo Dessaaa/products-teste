@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Domains\ProductRelated\Models;
+namespace Products\Models;
 
-use App\Domains\Product\Models\ProductModel;
+use Products\Models\ProductModel;
 use BaseCms\Models\BaseModelTrait;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;

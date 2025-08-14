@@ -1,9 +1,9 @@
 <?php
 
-namespace App\Domains\FaqItem\Models;
+namespace Products\Models;
 
-use App\Domains\FaqItemsTranslation\Models\FaqItemsTranslationModel;
-use App\Domains\FaqTab\Models\FaqTabModel;
+use Products\Models\FaqItemsTranslationModel;
+use Products\Models\FaqTabModel;
 use App\Models\Traits\BaseTranslation;
 use Astrotomic\Translatable\Translatable;
 use Illuminate\Database\Eloquent\Model;

@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Domains\ProductImagesTranslation\Models;
+namespace Products\Models;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
@@ -43,7 +43,7 @@ class ProductImagesTranslationModel extends Model
      */
     public function locale()
     {
-        return $this->belongsTo('App\Domains\Locale\Models\LocaleModel', 'locale');
+        return $this->belongsTo('Products\Models\LocaleModel', 'locale');
     }
 
     /**
@@ -51,7 +51,7 @@ class ProductImagesTranslationModel extends Model
      */
     public function productImage()
     {
-        return $this->belongsTo('App\Domains\ProductImage\Models\ProductImageModel', 'product_images_id');
+        return $this->belongsTo('Products\Models\ProductImageModel', 'product_images_id');
     }
 
     /**

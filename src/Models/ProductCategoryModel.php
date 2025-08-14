@@ -1,9 +1,9 @@
 <?php
 
-namespace App\Domains\ProductCategory\Models;
+namespace Products\Models;
 
-use App\Domains\Category\Models\CategoryModel;
-use App\Domains\Product\Models\ProductModel;
+use Products\Models\CategoryModel;
+use Products\Models\ProductModel;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Spatie\EloquentSortable\Sortable;

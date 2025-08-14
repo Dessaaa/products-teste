@@ -1,9 +1,9 @@
 <?php
 
-namespace App\Domains\Solution\Models;
+namespace Products\Models;
 
-use App\Domains\Product\Models\ProductModel;
-use App\Domains\SolutionsTranslation\Models\SolutionsTranslationModel;
+use Products\Models\ProductModel;
+use Products\Models\SolutionsTranslationModel;
 use App\Models\Traits\BaseSeoTrait;
 use App\Models\Traits\BaseTranslation;
 use Astrotomic\Translatable\Translatable;

@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Domains\ModelTechspecsTranslation\Models;
+namespace Products\Models;
 
-use App\Domains\ModelTechspec\Models\ModelTechspecModel;
+use Products\Models\ModelTechspecModel;
 use BaseCms\Models\LocaleModel;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Factories\HasFactory;

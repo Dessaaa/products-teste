@@ -1,19 +1,19 @@
 <?php
 
-namespace App\Domains\Product\Models;
+namespace Products\Models;
 
 use App\Domains\Category\Enums\CategoryTypeEnum;
-use App\Domains\Category\Models\CategoryModel;
-use App\Domains\Model\Models\ModelModel;
-use App\Domains\ProductDiff\Models\ProductDiffModel;
-use App\Domains\ProductHome\Models\ProductHomeModel;
-use App\Domains\ProductImage\Models\ProductImageModel;
-use App\Domains\ProductsFaq\Models\ProductsFaqModel;
-use App\Domains\ProductSolution\Models\ProductSolutionModel;
-use App\Domains\ProductsTranslation\Models\ProductsTranslationModel;
-use App\Domains\ProductSubcategory\Models\ProductSubcategoryModel;
-use App\Domains\Solution\Models\SolutionModel;
-use App\Domains\Subcategory\Models\SubcategoryModel;
+use Products\Models\CategoryModel;
+use Products\Models\ModelModel;
+use Products\Models\ProductDiffModel;
+use Products\Models\ProductHomeModel;
+use Products\Models\ProductImageModel;
+use Products\Models\ProductsFaqModel;
+use Products\Models\ProductSolutionModel;
+use Products\Models\ProductsTranslationModel;
+use Products\Models\ProductSubcategoryModel;
+use Products\Models\SolutionModel;
+use Products\Models\SubcategoryModel;
 use App\Models\Traits\BaseSeoTrait;
 use App\Models\Traits\BaseTranslation;
 use Astrotomic\Translatable\Translatable;
@@ -170,7 +170,7 @@ class ProductModel extends Model implements Sortable
      */
     public function modelTechspecs()
     {
-        return $this->hasMany('App\Domains\ModelTechspec\Models\ModelTechspecModel', 'model_id');
+        return $this->hasMany('Products\Models\ModelTechspecModel', 'model_id');
     }
 
     /**
@@ -186,7 +186,7 @@ class ProductModel extends Model implements Sortable
      */
     public function productCategories()
     {
-        return $this->hasMany('App\Domains\ProductCategory\Models\ProductCategoryModel', 'product_id');
+        return $this->hasMany('Products\Models\ProductCategoryModel', 'product_id');
     }
 
     /**
@@ -210,7 +210,7 @@ class ProductModel extends Model implements Sortable
      */
     public function productRelateds()
     {
-        return $this->hasMany('App\Domains\ProductRelated\Models\ProductRelatedModel', 'product_id');
+        return $this->hasMany('Products\Models\ProductRelatedModel', 'product_id');
     }
 
     /**

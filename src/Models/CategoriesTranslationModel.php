@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Domains\CategoriesTranslation\Models;
+namespace Products\Models;
 
-use App\Domains\Category\Models\CategoryModel;
+use Products\Models\CategoryModel;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Spatie\Activitylog\Traits\LogsActivity;

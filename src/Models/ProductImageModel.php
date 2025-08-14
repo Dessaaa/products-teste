@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Domains\ProductImage\Models;
+namespace Products\Models;
 
-use App\Domains\Product\Models\ProductModel;
+use Products\Models\ProductModel;
 
 use Illuminate\Database\Eloquent\Model;
 use App\Models\Traits\BaseTranslation;
@@ -64,7 +64,7 @@ class ProductImageModel extends Model implements Sortable
 
     protected $translationForeignKey = 'product_images_id';
 
-    protected $translationModel = \App\Domains\ProductImagesTranslation\Models\ProductImagesTranslationModel::class;
+    protected $translationModel = ProductImagesTranslationModel::class;
 
     /**
      * @return \Illuminate\Database\Eloquent\Relations\BelongsTo

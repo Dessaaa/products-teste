@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Domains\CategoriesFaqTranslation\Models;
+namespace Products\Models;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
@@ -43,7 +43,7 @@ class CategoriesFaqTranslationModel extends Model
      */
     public function categoriesFaq()
     {
-        return $this->belongsTo('App\Domains\CategoriesFaq\Models\CategoriesFaqModel');
+        return $this->belongsTo('Products\Models\CategoriesFaqModel');
     }
 
     /**

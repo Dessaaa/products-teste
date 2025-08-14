@@ -1,13 +1,13 @@
 <?php
 
-namespace App\Domains\Model\Models;
+namespace Products\Models;
 
-use App\Domains\Group\Models\GroupModel;
-use App\Domains\ModelGroup\Models\ModelGroupModel;
-use App\Domains\ModelsTranslation\Models\ModelsTranslationModel;
-use App\Domains\ModelTechspec\Models\ModelTechspecModel;
-use App\Domains\Product\Models\ProductModel;
-use App\Domains\Techspec\Models\TechspecModel;
+use Products\Models\GroupModel;
+use Products\Models\ModelGroupModel;
+use Products\Models\ModelsTranslationModel;
+use Products\Models\ModelTechspecModel;
+use Products\Models\ProductModel;
+use Products\Models\TechspecModel;
 use App\Models\Traits\BaseTranslation;
 use Astrotomic\Translatable\Translatable;
 use Illuminate\Database\Eloquent\Model;

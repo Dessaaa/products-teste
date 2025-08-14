@@ -1,10 +1,10 @@
 <?php
 
-namespace App\Domains\ProductsTranslation\Models;
+namespace Products\Models;
 
-use App\Domains\Product\Models\ProductModel;
-use App\Domains\ProductCategory\Models\ProductCategoryModel;
-use App\Domains\ProductSubcategory\Models\ProductSubcategoryModel;
+use Products\Models\ProductModel;
+use Products\Models\ProductCategoryModel;
+use Products\Models\ProductSubcategoryModel;
 use App\View\Components\Frontend\Block\SectionCta;
 use App\View\Components\Frontend\Block\SectionCtaInfo;
 use App\View\Components\Frontend\Block\SectionFeature;

@@ -1,12 +1,10 @@
 <?php
 
-namespace App\Domains\SubcategoriesFaq\Models;
+namespace Products\Models;
 
-
-
-    use Illuminate\Database\Eloquent\Model;
-    use App\Models\Traits\BaseTranslation;
-    use Astrotomic\Translatable\Translatable;
+use Illuminate\Database\Eloquent\Model;
+use App\Models\Traits\BaseTranslation;
+use Astrotomic\Translatable\Translatable;
     
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Spatie\Activitylog\Traits\LogsActivity;
@@ -57,14 +55,14 @@ class SubcategoriesFaqModel extends Model implements Sortable
 
     protected $translationForeignKey = 'subcategories_faq_id';
 
-    protected $translationModel = \App\Domains\SubcategoriesFaqTranslation\Models\SubcategoriesFaqTranslationModel::class;
+    protected $translationModel = SubcategoriesFaqTranslationModel::class;
 
     /**
      * @return \Illuminate\Database\Eloquent\Relations\BelongsTo
      */
     public function subcategory()
     {
-        return $this->belongsTo('App\Domains\Subcategory\Models\SubcategoryModel');
+        return $this->belongsTo('Products\Models\SubcategoryModel');
     }
 
     /**
@@ -72,7 +70,7 @@ class SubcategoriesFaqModel extends Model implements Sortable
      */
     public function subcategoriesFaqTranslations()
     {
-        return $this->hasMany('App\Domains\SubcategoriesFaqTranslation\Models\SubcategoriesFaqTranslationModel');
+        return $this->hasMany('Products\Models\SubcategoriesFaqTranslationModel');
     }
 
     /**

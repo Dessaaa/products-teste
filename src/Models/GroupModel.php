@@ -12,30 +12,46 @@ use Illuminate\Database\Eloquent\SoftDeletes;
 /**
  * @property integer $id
  * @property string $name
- * @property mixed $deleted_at
  * @property mixed $created_at
  * @property mixed $updated_at
+ * @property mixed $deleted_at
+ * @property ModelGroup[] $modelGroups
+ * @property TechspecGroup[] $techspecGroups
  */
-class FormProductModel extends Model
+class GroupModel extends Model
 {
     use HasFactory;
     use LogsActivity;
 
     use SoftDeletes;
 
-    protected $connection = 'products'; // conexão com o banco de stara br
-
     /**
      * The table associated with the model.
      *
      * @var string
      */
-    protected $table = 'form_products';
+    protected $table = 'groups';
 
     /**
      * @var array
      */
-    protected $fillable = ['name', 'deleted_at', 'created_at', 'updated_at'];
+    protected $fillable = ['name', 'created_at', 'updated_at', 'deleted_at'];
+
+    /**
+     * @return \Illuminate\Database\Eloquent\Relations\HasMany
+     */
+    public function modelGroups()
+    {
+        return $this->hasMany('Products\Models\ModelGroupModel');
+    }
+
+    /**
+     * @return \Illuminate\Database\Eloquent\Relations\HasMany
+     */
+    public function techspecGroups()
+    {
+        return $this->hasMany('Products\Models\TechspecGroupModel');
+    }
 
     /**
      * Logs

@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Domains\FaqsTranslation\Models;
+namespace Products\Models;
 
-use App\Domains\Faq\Models\FaqModel;
+use Products\Models\FaqModel;
 use BaseCms\Models\LocaleModel;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Factories\HasFactory;

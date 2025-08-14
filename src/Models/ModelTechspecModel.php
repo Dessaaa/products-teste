@@ -1,10 +1,10 @@
 <?php
 
-namespace App\Domains\ModelTechspec\Models;
+namespace Products\Models;
 
-use App\Domains\ModelTechspecsTranslation\Models\ModelTechspecsTranslationModel;
-use App\Domains\Product\Models\ProductModel;
-use App\Domains\Techspec\Models\TechspecModel;
+use Products\Models\ModelTechspecsTranslationModel;
+use Products\Models\ProductModel;
+use Products\Models\TechspecModel;
 use App\Models\Traits\BaseTranslation;
 use Astrotomic\Translatable\Translatable;
 use Illuminate\Database\Eloquent\Model;

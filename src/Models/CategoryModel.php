@@ -1,12 +1,12 @@
 <?php
 
-namespace App\Domains\Category\Models;
+namespace Products\Models;
 
-use App\Domains\CategoriesFaq\Models\CategoriesFaqModel;
-use App\Domains\CategoriesTranslation\Models\CategoriesTranslationModel;
-use App\Domains\Product\Models\ProductModel;
-use App\Domains\ProductCategory\Models\ProductCategoryModel;
-use App\Domains\Subcategory\Models\SubcategoryModel;
+use Products\Models\CategoriesFaqModel;
+use Products\Models\CategoriesTranslationModel;
+use Products\Models\ProductModel;
+use Products\Models\ProductCategoryModel;
+use Products\Models\SubcategoryModel;
 use App\Models\Traits\BaseSeoTrait;
 use App\Models\Traits\BaseTranslation;
 use Astrotomic\Translatable\Translatable;

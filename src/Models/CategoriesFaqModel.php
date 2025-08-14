@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Domains\CategoriesFaq\Models;
+namespace Products\Models;
 
 use Illuminate\Database\Eloquent\Model;
 use App\Models\Traits\BaseTranslation;
@@ -55,14 +55,14 @@ class CategoriesFaqModel extends Model implements Sortable
 
     protected $translationForeignKey = 'categories_faq_id';
 
-    protected $translationModel = \App\Domains\CategoriesFaqTranslation\Models\CategoriesFaqTranslationModel::class;
+    protected $translationModel = CategoriesFaqTranslationModel::class;
 
     /**
      * @return \Illuminate\Database\Eloquent\Relations\BelongsTo
      */
     public function category()
     {
-        return $this->belongsTo('App\Domains\Category\Models\CategoryModel');
+        return $this->belongsTo('Products\Models\CategoryModel');
     }
 
     /**
@@ -70,7 +70,7 @@ class CategoriesFaqModel extends Model implements Sortable
      */
     public function categoriesFaqTranslations()
     {
-        return $this->hasMany('App\Domains\CategoriesFaqTranslation\Models\CategoriesFaqTranslationModel');
+        return $this->hasMany('Products\Models\CategoriesFaqTranslationModel');
     }
 
     /**

@@ -1,9 +1,9 @@
 <?php
 
-namespace App\Domains\ProductSolution\Models;
+namespace Products\Models;
 
-use App\Domains\Product\Models\ProductModel;
-use App\Domains\Solution\Models\SolutionModel;
+use Products\Models\ProductModel;
+use Products\Models\SolutionModel;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Spatie\Activitylog\LogOptions;

@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Domains\ProductDiff\Models;
+namespace Products\Models;
 
-use App\Domains\ProductDiffsTranslation\Models\ProductDiffsTranslationModel;
+use Products\Models\ProductDiffsTranslationModel;
 use App\Models\Traits\BaseTranslation;
 use Astrotomic\Translatable\Translatable;
 use Illuminate\Database\Eloquent\Model;

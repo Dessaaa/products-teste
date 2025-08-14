@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Domains\ProductsFaq\Models;
+namespace Products\Models;
 
 use App\Models\Traits\BaseTranslation;
 use Astrotomic\Translatable\Translatable;
@@ -55,14 +55,14 @@ class ProductsFaqModel extends Model implements Sortable
 
     protected $translationForeignKey = 'products_faq_id';
 
-    protected $translationModel = \App\Domains\ProductsFaqTranslation\Models\ProductsFaqTranslationModel::class;
+    protected $translationModel = ProductsFaqTranslationModel::class;
 
     /**
      * @return \Illuminate\Database\Eloquent\Relations\BelongsTo
      */
     public function product()
     {
-        return $this->belongsTo('App\Domains\Product\Models\ProductModel');
+        return $this->belongsTo('Products\Models\ProductModel');
     }
 
     /**
@@ -70,7 +70,7 @@ class ProductsFaqModel extends Model implements Sortable
      */
     public function productsFaqTranslations()
     {
-        return $this->hasMany('App\Domains\ProductsFaqTranslation\Models\ProductsFaqTranslationModel');
+        return $this->hasMany('Products\Models\ProductsFaqTranslationModel');
     }
 
     /**

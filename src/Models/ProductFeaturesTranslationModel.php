@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Domains\ProductFeaturesTranslation\Models;
+namespace Products\Models;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
@@ -50,7 +50,7 @@ class ProductFeaturesTranslationModel extends Model
      */
     public function productFeature()
     {
-        return $this->belongsTo('App\Domains\ProductFeature\Models\ProductFeatureModel');
+        return $this->belongsTo('Products\Models\ProductFeatureModel');
     }
 
     /**

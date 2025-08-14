@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Domains\ProductDiffsTranslation\Models;
+namespace Products\Models;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
@@ -50,7 +50,7 @@ class ProductDiffsTranslationModel extends Model
      */
     public function productDiff()
     {
-        return $this->belongsTo('App\Domains\ProductDiff\Models\ProductDiffModel', 'product_diffs_id');
+        return $this->belongsTo('Products\Models\ProductDiffModel', 'product_diffs_id');
     }
 
     /**
